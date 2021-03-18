@@ -8,6 +8,7 @@ def process_file(name, f):
     res = []
     for line in f:
         #find phone number
+        #test
         text1 = re.sub("[<].*?[>]", '', line)
         text1 = re.sub("[{].*", '', text1)
         text1 = re.sub(".*[}]", '', text1)
